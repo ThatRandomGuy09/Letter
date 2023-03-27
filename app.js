@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
 const https = require("https");
-const { response } = require("express");
+/*const { response } = require("express");*/
 
 const app = express();
 
@@ -43,7 +43,7 @@ app.post("/", function(req,res){
     const options = {
 
         method: "POST",
-        auth:"vardy9:a025c55031c028b92eddedd8bc461ee56-us13"
+        auth:"vardy9:025c55031c028b92eddedd8bc461ee56-us13"
         
 
     }
@@ -77,7 +77,7 @@ app.post("/faliure", function(req,res){
 
 
 
-app.listen(process.env.PORT || 3000, function(){
+app.listen(3000, function(){
     console.log("Server is running on port 3000")
 })
 
